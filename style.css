@@ -10,10 +10,11 @@ body{
     font-optical-sizing: auto;
     font-weight: <weight>;
     font-style: normal;
-    over=flow-x:hidden;
+  
 }
 html{
     scroll-behavior: smooth;
+      over-flow-x:hidden;
 }
 .top-bar{
     padding: 20px;
