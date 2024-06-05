@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAMURAI SCROLLS- Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.css' integrity='sha512-tx5+1LWHez1QiaXlAyDwzdBTfDjX07GMapQoFTS74wkcPMsI3So0KYmFe6EHZjI8+eSG0ljBlAQc3PQ5BTaZtQ==' crossorigin='anonymous'/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<style>
+    *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    color:#f0e6d7;
+    background-color:black;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    over=flow-x:hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+.top-bar{
+    padding: 20px;
+    background-color: #cd1818;
+    color: black;
+}
+.top-bar i{
+    margin-right: 30px;
+    font-size: 30px;
+}
+.logo{
+    font-size: 30px;
+    position: relative;
+    font-weight: bolder;
+    color: black;
+    left: 250px;
+}
+.search-input{
+    position: relative;
+    left: 440px;
+}
+.search-input input{
+    padding: 15px;
+    background-color: #efefef;
+    border: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 18px;
+}
+.search-input input:focus{
+    outline: 0cap;
+}
+.search-input button{
+    position: absolute;
+    border: o;
+    background-color:black;
+    padding: 15px;
+    color: red;
+    font-weight: bold;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    height: 100%;
+}
+.nav-item,.logo,.search-input{
+    display: inline-block;
+}
+.logo{
+    vertical-align: middle;
+}
+nav{
+    position: sticky;
+    top: 0;
+    background-color:black;
+    padding: 30px;
+    z-index: 1;
+    text-align: center;
+}
+nav a{
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-right: 40px;
+    color: red;
+}
+.section-1{
+    padding: 70px;
+    position: relative;
+    background-image: url(./IMG_20240605_101436.jpg);
+    height: 80vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.section-1 .section-1-content{
+    margin-top: 110px;
+}
+.section-1 .section-1-content h1{
+    font-size: 60px;
+    width: 700px;
+    color:red;
+    font-weight: bolder;
+    border: black 2px;
+}
+.section-1 .section-1-content p{
+    font-size: 23px;
+    margin: 15px 0 40px;
+    color:white;
+    font-weight: bolder;
+}
+.view-btn{
+    padding: 15px 25px;
+    border: 0;
+    border-radius: 5px;
+    font-family: inherit;
+    font-weight: bold;
+    color: white;
+    background-color: red;
+}
+.explore-btn{
+    padding: 15px 25px;
+    padding: 15px 25px;
+    border: 0px;
+    border-radius: 5px;
+    font-family: inherit;
+    font-weight: bold;
+    background-color:red;
+    color: white;
+}
+.section-2{
+    padding: 20px;
+    text-align: center;
+}
+.section-2 .section-2-content{
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+}
+.section-2-content h2{
+    font-size: 45px;
+}
+.section-2-content p{
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.section-3{
+    padding: 30px;
+    margin: 100px 70px;
+}
+.section-3 img{
+    width: 400px;
+    height: auto;
+    float: left;
+    display: inline-block;
+    border-radius: 15px;
+    box-shadow: 0 0 10px red;
+  
+}
+.section-3-content{
+    float: right;
+    width: 700px;
+    height: auto;
+}
+.section-3-content span{
+    color: rgb(238, 5, 5);
+    letter-spacing: 1px;
+    font-weight: bolder;   
+    font-size: 40px;
+}
+.section-3-content h2{
+    font-size: 30px;
+    margin-top: 30px;
+    line-height: 1;
+    color: #f4ae3f;
+}
+.section-3-content p{
+    line-height: 20px;
+    margin: 20px;
+    font-size: 20px;
+    text-indent: 30px;
+}
+.bookdiv:hover{
+    transform: scale(1.2);
+}
+.section4{
+    clear: both;
+    text-align: center;
+    padding-top: 70px;
+}
+.section4 h2{
+    font-size: 45px;
+    color: #f4ae3f;
+
+}
+.section4 .booksmaindiv{
+    width: 100%;
+    margin-top: 60px;
+}
+.section4 .bookdiv{
+    width: 400px;
+    display: inline-block;
+    margin-right: 20px;
+}
+.section4 .bookdiv img{
+    width: 240px;
+    height: 300px;
+    float: left;
+    border-radius: 15px;
+}
+.section4 .bookdiv .book-content{
+    float: right;
+    width: 150px;
+    margin-top: 30px;
+    text-align: left;
+    padding-left: 10px;
+}
+.section4 .bookdiv .book-content h3{
+    margin: 10px;
+    color: red;
+    font-size: 22px;
+}
+.section4 .bookdiv .book-content span{
+    color: yellow;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+.bookdiv{
+    border-radius: 15px;
+    box-shadow: 0 0 10px red;
+}
+.bottom{
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+.contact{
+    background-color: #cd1818;
+    color: #f4ae3f;;
+    margin-top: 50px;
+}
+.contact h3{
+    padding: 14px;
+    text-align: center;
+    
+
+}
+.c{
+    font-size: 30px;
+    align-items: center;
+    font-weight: bolder;
+    color: black;
+}
+
+</style>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="nav-item">
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div class="logo">
+           <p>SAMURAI SCROLLS</p>
+        </div>
+        <div class="search-input">
+            <input type="search" name="" id="" placeholder="SEARCH HERE">
+            <button>SEARCH</button>
+        </div>
+    </div>
+    <nav class="nav-sticky">
+        <a href="#section-1"><b>Home</b></a>
+        <a href="#section-3"><b>About</b></a>
+        <a href="#section4"><b>TOP RATED</b></a>
+        <a href="#footer"><b>Contact</b></a>
+    </nav>
+    <main>
+        <section class="section-1" id="section-1">
+            <div class="section-1-content">
+                <h1>SAMURAI SCROLLS</h1>
+                <p><b>"Manga Speaks To Readers Because It Has Ability To Portray Very Real Human Emotions"</b></p>
+                <button class="view-btn">View All Books</button>
+                <button class="explore-btn">Explore Now</button>
+            </div>
+        </section>
+        <section class="section-2" id="section-2">
+            <div class="section-2-content">
+                <h2>75463</h2>
+                <p><b>Active Readers</b></p>
+            </div>
+            <div class="section-2-content">
+                <h2>3040</h2>
+                <p><b>Total Pages</b></p>
+            </div>
+            <div class="section-2-content">
+                <h2>283</h2>
+                <p><b>Cup of coffee</b></p>
+            </div>
+            <div class="section-2-content">
+                <h2>14500</h2>
+                <p><b>Facebook fans</b></p>
+            </div>
+        </section>
+        <section class="section-3" id="section-3">
+            <img src="./ac3c4fd165f6b96d77e881ef504df3eb.jpg" alt="About-img">
+            <div class="section-3-content">
+                <span><b>WELCOME TO  SAMURAI SCROLLS </b></span>
+                <h2>WELCOME TO SAMURAI SCROLLS<BR>
+                    GATEWAY TO BEST MANGA </h2>
+                <p>Dive into the world of Japanese manga with our extensive collection of titles, featuring everything from timeless classics to the latest releases.<br>At <b> SAMURAI SCROLLS</b>, we cater to all manga enthusiasts, whether you're a seasoned fan or just starting your journey into this captivating art form.
+                </p>
+                <p>we strive to provide a seamless reading experience with high-quality scans and translations, so you can fully immerse yourself in each story. Our user-friendly interface allows you to browse, search, and keep track of your favorite manga with ease. Join our vibrant community of manga enthusiasts to share reviews, discuss plot twists, and recommend hidden gems.</p>
+            </div>
+        </section>
+        <section class="section4" id="section4">
+            <h2> TOP RATED MANGA</h2>
+            <div class="booksmaindiv">
+                <div class="bookdiv">
+                    <img src="./onepiece.jpg" alt="book">
+                    <div class="book-content">
+                        <span>Eiichiro Oda</span>
+                        <h3>ONE PIECE</h3>
+                        <p class="readmore">The story follows the adventures of <b>MONKEY D.LUFFY</b> and his crew,</p>
+                    </div>
+                </div>
+                <div class="bookdiv">
+                    <img src="./naruto.jpg" alt="book">
+                    <div class="book-content">
+                        <span> Masashi Kishimoto</span>
+                        <h3>NARUTO</h3>
+                        <p>It tells the story of <b>NARUTO UZUMAKI</b>, a young ninja..</p>
+                    </div>
+                </div>
+                <div class="bookdiv">
+                    <img src="./demon slayer.jpg" alt="book">
+                    <div class="book-content">
+                        <span> Koyoharu Gotouge</span>
+                        <h3>DEMON SLAYER</h3>
+                        <p> It follows teenage <b>TANJIRO KAMADO</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="booksmaindiv">
+                <div class="bookdiv">
+                    <img src="./Jujutsu_kaisen.jpg" alt="book">
+                    <div class="book-content">
+                        <span>  Gege Akutami</span>
+                        <h3>JUJUTSU KAISEN</h3>
+                        <p>  The story follows high school student <b>YUJI ITADORI </b></p>
+                    </div>
+                </div>
+                <div class="bookdiv">
+                    <img src="./death note.jpg" alt="book">
+                    <div class="book-content">
+                        <span>Takeshi Obata</span>
+                        <h3>DEATH NOTE</h3>
+                        <p>The story follows <b> LIGHT YAGAMI</b>, a genius high school student </b></p>
+                    </div>
+                </div>
+                <div class="bookdiv">
+                    <img src="./attack on titons.jpg" alt="book">
+                    <div class="book-content">
+                        <span> Hajime Isayama</span>
+                        <h3>ATTACK ON TITAN</h3>
+                        <p>the story follows <b>EREN YEAGER</b></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="contact" id="footer">
+            <h3 class="c">CONTACT DETIALS</h3>
+            <hr>  
+            <h3><b> MOBILE NUMBER: +91 9345207144</b></h3>
+            <h3><b>dhanvanththulasiraman@gmail.com</b></h3>
+            <h3><b>66A BIG STREET MUNJURPET VELLORE <Br>
+             TAMIL NADU INDIA</b></h3>
+        </div>
+        </div>
+    </main> 
+</body>
+</html>    
